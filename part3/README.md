@@ -12,6 +12,11 @@ docker-compose run --rm web rails db:create
 docker-compose run --rm web rails db:migrate
 ```
 
+新しくアプリを作るとき
+```
+docker-compose run web rails new . --force --database=postgresql
+```
+
 サーバーの立て方
 ```
 docker compose up -d
